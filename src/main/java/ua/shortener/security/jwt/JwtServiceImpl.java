@@ -18,8 +18,8 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class JwtServiceImpl implements JwtService{
 
-    @Value("${jwt.secret}")
-    private String jwtSecretKey;
+
+    private String jwtSecretKey = "984hg493gh0439rthr0429uruj2309yh937gc763fe87t3f89723gf";
 
     @Value("${jwt.lifetime}")
     private  int JWT_LIFETIME;

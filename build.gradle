@@ -44,5 +44,8 @@ dependencies {
 }
 
 tasks.named('test') {
+
+    jvmArgs("-Xshare:off")
+
     useJUnitPlatform()
 }

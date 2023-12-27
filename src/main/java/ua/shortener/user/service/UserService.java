@@ -10,6 +10,7 @@ import ua.shortener.user.Role;
 import ua.shortener.user.User;
 import ua.shortener.user.repository.UserRepository;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,6 +31,7 @@ public class UserService implements  UserDetailsService{
                         .map(role -> new SimpleGrantedAuthority(role.name()))
                         .toList());
     }
+
 
     public Optional<User> findUserByEmail(String email){
         return userRepository.findUserByEmail(email);

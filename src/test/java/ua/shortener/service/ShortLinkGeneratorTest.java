@@ -1,12 +1,17 @@
 package ua.shortener.service;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import ua.shortener.security.jwt.JwtServiceImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static ua.shortener.link.service.ShortLinkGenerator.generateShortLink;
 
+
 class ShortLinkGeneratorTest {
 
+    private
     @Test
     void generateShortLink_shouldReturnStringOfCorrectLength() {
         // given && when
